@@ -16,6 +16,14 @@ const movies = [
 
 function findMoviesByYear(movies, year) {
   // Start coding here
+  let result = []
+  for(let key in movies){
+    const year = new Date(movies[key].releaseDate);
+    if(year.getFullYear()===1994){
+      result.push(movies[key])
+    }
+  }
+  return result
 }
 
 console.log(findMoviesByYear(movies, 1994));
