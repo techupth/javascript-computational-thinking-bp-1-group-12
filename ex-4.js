@@ -16,6 +16,13 @@ const movies = [
 
 function findMoviesByYear(movies, year) {
   // Start coding here
+  let movies1994 = []
+  for(let i in movies){
+    if(movies[i].releaseDate.includes(year)){
+      movies1994.push(movies[i])
+    }
+  }
+  console.log(movies1994)
 }
 
 console.log(findMoviesByYear(movies, 1994));
@@ -26,3 +33,4 @@ console.log(findMoviesByYear(movies, 1994));
   { title: "Pulp Fiction", releaseDate: "1994-10-14", genre: "Crime" }
 ]
 */
+console.log(movies[0].releaseDate.includes("1994"))

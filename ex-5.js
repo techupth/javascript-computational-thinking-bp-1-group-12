@@ -1,5 +1,6 @@
 function getLetterFrequency(words) {
   // Start coding here
+  console.log(words.length)
 }
 
 const str = "Techupth";

@@ -3,6 +3,10 @@ let anotherNumbers = [2, 4, 6];
 
 function addNumber(numbers, amount) {
   // Start coding here
+ for(let i in numbers){
+  numbers[i] += amount
+ }
+ console.log(numbers)
 }
 
 addNumber(numbers, 10); // Output: [20, 30, 40]
